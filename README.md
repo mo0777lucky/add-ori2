@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# DB設計
+## items テーブル
+| Column      | Type       | Options                        |
+| ----------- | ---------- | ------------------------------ |
+| title       | string     | null: false                    |
+| image       |            |                                |
+| category_id | integer    | null: false                    |
+| year_id     | integer    | null: false                    |
+| month_id    | integer    | null: false                    |
+| favorite_id | integer    | null: false                    |
+| point       | text       | null: false                    |
+| description | text       | null: false                    |
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
