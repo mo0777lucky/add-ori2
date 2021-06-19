@@ -35,32 +35,6 @@
   padding: 1px;
 }
 
-/*.nav_toggle {
-  display: block;
-  position: relative;
-  width: 1.75rem;
-  height: 1.5rem;
-}
-.nav_toggle i {
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: gray;
-  position: absolute;
-  transition: transform .5s, opacity .5s;
-}
-.nav_toggle i:nth-child(1) {
-  top: 0;
-}
-.nav_toggle i:nth-child(2) {
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
-.nav_toggle i:nth-child(3) {
-  bottom: 0;
-}*/
-
 #menu-btn-check {
   display: none;
 }
@@ -76,6 +50,7 @@
   align-items: center;
   z-index: 90;
 }
+
 .menu-btn span,
 .menu-btn span:before,
 .menu-btn span:after {
@@ -87,9 +62,15 @@
   background-color: gray;
   position: absolute;
 }
+
 .menu-btn span:before {
   bottom: 8px;
 }
+
+.menu-btn span:before {
+  bottom: 8px;
+}
+
 .menu-btn span:after {
   top: 8px;
 }
@@ -111,10 +92,12 @@
 .menu-content ul {
   padding: 70px 10px 0;
 }
+
 .menu-content ul li {
   border-bottom: solid 1px #ffffff;
   list-style: none;
 }
+
 .menu-content ul li a {
   display: block;
   width: 100%;
@@ -125,6 +108,7 @@
   padding: 9px 15px 10px 0;
   position: relative;
 }
+
 .menu-content ul li a::before {
   content: "";
   width: 7px;
@@ -140,3 +124,8 @@
 #menu-btn-check:checked ~ .menu-content {
   left: 0;/*メニューを画面内へ*/
 }
+
+.red{
+  color: red;
+}
+

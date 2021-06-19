@@ -7,7 +7,6 @@
   </head>
   <body>
 
-
       <header>
         <div class="hamburger-menu">
           <input type="checkbox" id="menu-btn-check">
