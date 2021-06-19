@@ -1,0 +1,77 @@
+
+<!--div class="items-sell-contents">
+  <header class="items-sell-header">
+    <%= link_to image_tag('furima-logo-color.png' , size: '185x50'), "/" %>
+    <body-->
+   
+      <div class="items-sell-main">
+        <h2 class="items-sell-title">NEW BOOK</h2>
+        <%= form_with(model: @items, local: true) do |f| %>
+
+        <%= render 'shared/error_messages', model: f.object %>
+
+        <div class="img-upload">
+          <div class="weight-bold-text">
+            Image
+            <span class="indispensable">必須</span>
+          </div>
+          <div class="click-upload">
+            <p>
+              クリックしてファイルをアップロード
+            </p>
+            <%= f.file_field :image, id:"item-image" %>
+          </div>
+        </div>
+    
+        <div class="new-items">
+          <div class="weight-bold-text">
+            Title
+            <span class="indispensable">必須</span>
+          </div>
+          <%= f.text_area :title, class:"items-text", id:"item-name", placeholder:"title" %>
+          <div class="items-explain">
+            <div class="weight-bold-text">
+              Point
+              <span class="indispensable">必須</span>
+            </div>
+            <%= f.text_area :point, class:"items-text", id:"item-info", placeholder:"essence" %>
+            <div class="weight-bold-text">
+              Description
+              <span class="indispensable">必須</span>
+            </div>
+            <%= f.text_area :description, class:"items-text", id:"item-info", placeholder:"description" %>
+          </div>
+        </div>
+      
+        <div class="items-detail">
+          <div class="form">
+            <div class="weight-bold-text">
+              Category
+              <span class="indispensable">必須</span>
+            </div>
+            <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+            <div class="weight-bold-text">
+              Year
+              <span class="indispensable">必須</span>
+            </div>
+            <%= f.collection_select(:year_id, Year.all, :id, :name, {}, {class:"select-box", id:"item-sales-year"}) %>
+            <div class="weight-bold-text">
+              Month
+              <span class="indispensable">必須</span>
+            </div>
+            <%= f.collection_select(:month_id, Month.all, :id, :name, {}, {class:"select-box", id:"item-month"}) %>
+            <div class="weight-bold-text">
+              Favorite
+              <span class="indispensable">必須</span>
+            </div>
+            <%= f.collection_select(:favorite_id, Favorite.all, :id, :name, {}, {class:"select-box", id:"item-favorite"}) %>
+          </div>
+        </div>
+    
+        <div class="sell-btn-contents">
+          <%= f.submit "ADD BOOK" ,class:"sell-btn" %>
+          <%=link_to 'BACK', root_path, class:"back-btn" %>
+        </div>
+      </div>
+      <% end %>
+    </body>
