@@ -1,6 +1,4 @@
-<h1>Items#index</h1>
-<p>Find me in app/views/items/index.html.erb</p>
-<!--DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
   <head>
     <meta charset="UTF-8">
@@ -9,27 +7,51 @@
   </head>
   <body>
 
-      <header class="page-header wrapper">
-        <h1><a href="portfolio.html"><img class="logo" src="images/logo.png" alt="sample1"></a></h1>
-        <nav>
-          <ul class="main-nav">
-            <li><a href="portfolio2.html">Biography</a></li>
-            <li><a href="portfolio3.html">Skill</a></li>
-            <li><a href="portfolio4.html">Favorite</a></li>
-            <li><a href="portfolio5.html">Future</a></li>
+      <!--header class="page-header wrapper">
+      <span class="nav_toggle">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+          <nav class="nav">
+           <ul class="nav_menu_ul">
+            <li><a href="nav_menu_li"><a href="#">RECORD</a></li>
+            <li><a href="nav_menu_li"><a href="#">NEW ITEM</a></li>
+            <li><a href="nav_menu_li"><a href="#">FAVORITE</a></li>
+            <li><a href="nav_menu_li"><a href="#">SEARCH</a></li>
           </ul>
         </nav>
-      </header>
+      </header-->
 
-      <div id="movei-contents">
-        <video id="video" src="images/mymovie2.mp4" loop autoplay muted></video>
-      </div>
+      <header>
+        <div class="hamburger-menu">
+          <input type="checkbox" id="menu-btn-check">
+          <label for="menu-btn-check" class="menu-btn"><span></span></label>
+          <!--ここからメニュー-->
+          <div class="menu-content">
+            <ul>
+                <li>
+                    <a href="#">RECORD</a>
+                </li>
+                <li>
+                    <a href="#">NEW ITEM</a>
+                </li>
+                <li>
+                    <a href="#">FAVORITE</a>
+                </li>
+                <li>
+                    <a href="#">SEARCH</a>
+                </li>
+            </ul>
+          </div>
+        <!--ここまでメニュー-->
+        </div>
 
       <div class="big-bg">
-        <p> </p>
-        <div class="top-title">The new world has already begun. - さあ、行こう!! -</div>
-        <p> </p>
-        <h2>Be <span class="red">a</span> Engineer</h2>
+        <img src="images/book5.png" class="image" alt="sample">
+        <!--div class="top-title">
+          <h2>Welcome <span class="red">into</span> the book</h2>
+        </div-->
       </div>
   </body>  
 </html>
