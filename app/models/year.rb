@@ -1,0 +1,48 @@
+class Category < ActiveHash::Base
+  self.data = [
+    { id: 1, name: '--' },
+    { id: 2, name: '2021' },
+    { id: 3, name: '2022' },
+    { id: 4, name: '2023' },
+    { id: 5, name: '2024' },
+    { id: 6, name: '2025' },
+    { id: 7, name: '2026' },
+    { id: 8, name: '2027' },
+    { id: 9, name: '2028' },
+    { id: 10, name: '2029' },
+    { id: 11, name: '2030' }
+    { id: 12, name: '2031' },
+    { id: 13, name: '2032' },
+    { id: 14, name: '2033' },
+    { id: 15, name: '2034' },
+    { id: 16, name: '2035' },
+    { id: 17, name: '2036' },
+    { id: 18, name: '2037' },
+    { id: 19, name: '2038' },
+    { id: 20, name: '2039' },
+    { id: 21, name: '2040' },
+    { id: 22, name: '2041' },
+    { id: 23, name: '2042' },
+    { id: 24, name: '2043' },
+    { id: 25, name: '2044' },
+    { id: 26, name: '2045' },
+    { id: 27, name: '2046' },
+    { id: 28, name: '2047' },
+    { id: 29, name: '2048' },
+    { id: 30, name: '2049' },
+    { id: 31, name: '2050' },
+    { id: 32, name: '2051' },
+    { id: 33, name: '2052' },
+    { id: 34, name: '2053' },
+    { id: 35, name: '2054' },
+    { id: 36, name: '2055' },
+    { id: 37, name: '2056' },
+    { id: 38, name: '2057' },
+    { id: 39, name: '2058' },
+    { id: 40, name: '2059' },
+    { id: 41, name: '2060' },
+  ]
+ 
+   include ActiveHash::Associations
+   has_many :items
+ end
