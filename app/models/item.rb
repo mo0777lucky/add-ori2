@@ -1,9 +1,9 @@
 class Item < ApplicationRecord
-  #extend ActiveHash::Associations::ActiveRecordExtensions
-  #belongs_to :category
-  #belongs_to :year
-  #belongs_to :month
-  #belongs_to :favorite
+  extend ActiveHash::Associations::ActiveRecordExtensions
+  belongs_to :category
+  belongs_to :year
+  belongs_to :month
+  belongs_to :favorite
 
   with_options presence: true do
     validates :title

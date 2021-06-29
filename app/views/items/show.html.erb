@@ -1,0 +1,60 @@
+<main class="main">
+  <div class="inner">
+    <div class="item__wrapper">
+      <p class="item__hedding">
+        <%= @item.title %>
+      </p>
+
+      <%= link_to @item.user.name, user_path(@item.user_id), class: :item__user %>
+        <div class="prototype__manage">
+          <%= link_to "編集する", edit_item_path(@item.id), class: :item__btn, method: :get %>
+          <%= link_to "削除する", item_path(@item.id), class: :item__btn, method: :delete %>
+        </div>
+      
+      <div class="item__image">
+        <%= image_tag @item.image %>
+      </div>
+
+      <div class="item__body">
+        <div class="item__detail">
+          <p class="detail__title"></p>
+          <p class="detail__message">
+            <%= @item.point %>
+          </p>
+        </div>
+        <div class="item__detail">
+          <p class="detail__title">title</p>
+          <p class="detail__message">
+            <%= @item.description %>
+          </p>
+        </div>
+
+        <!--div class="item__detail">
+          <p class="detail__title"></p>
+          <p class="detail__message">
+            <%= @item.category_id.name %>
+          </p>
+        </div>
+        <div class="item__detail">
+          <p class="detail__title">title</p>
+          <p class="detail__message">
+            <%= @item.year_id.name %>
+          </p>
+        </div>
+        <div class="item__detail">
+          <p class="detail__title"></p>
+          <p class="detail__message">
+            <%= @item.month_id.name %>
+          </p>
+        </div>
+        <div class="item__detail">
+          <p class="detail__title">title</p>
+          <p class="detail__message">
+            <%= @item.favorite_id.name %>
+          </p>
+        </div-->
+      </div>
+    </div>
+  </div>
+</main>
+

@@ -1,4 +1,4 @@
-class Category < ActiveHash::Base
+class Month < ActiveHash::Base
   self.data = [
     { id: 1, name: '--' },
     { id: 2, name: 'January' },
